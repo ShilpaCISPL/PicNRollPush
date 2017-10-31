@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "10403786050",
+    "firebase_url": "https://androidpicnroll.firebaseio.com",
+    "project_id": "androidpicnroll",
+    "storage_bucket": "androidpicnroll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10403786050:android:f7baa308330bbfde",
+        "android_client_info": {
+          "package_name": "picnroll.shilpa_cispl.com.picnroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10403786050-b8ii5se54hsve4bvejl45v6iboraf903.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV1Y-TETnMg4HnSj_hQVn1vBzbJfjAsUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

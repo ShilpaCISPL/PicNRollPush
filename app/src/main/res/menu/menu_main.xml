@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:title="Notification"-->
+        <!--app:showAsAction="always"-->
+<!--android:icon="@android:drawable/ic_lock_idle_alarm"-->
+       <!--/>-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="settings"
+        android:icon="@android:drawable/ic_lock_idle_alarm">
+
+
+<menu>
+    <item
+        android:id="@+id/eight_hours"
+        android:title="8hrs"
+        app:showAsAction="never"
+        android:orderInCategory="2"
+
+
+        />
+    <item
+        android:id="@+id/sixteen_hours"
+        android:title="16hrs"
+        app:showAsAction="never"
+        android:orderInCategory="3"
+
+        />
+</menu>
+
+</item>
+
+</menu>

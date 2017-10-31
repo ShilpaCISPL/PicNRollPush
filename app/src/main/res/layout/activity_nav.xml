@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize" />-->
+
+
+
+    <!--<include layout="@layout/content_galleries" />-->
+
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <!-- Main layout -->
+        <FrameLayout
+            android:id="@+id/main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background = "@drawable/login_bg"/>
+
+        <!-- The navigation drawer -->
+        <ListView android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:background="#ccc"/>
+
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/listFolders"
+    android:visibility="gone">
+
+
+    <ListView
+        android:id="@+id/lv_languages"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+    </ListView>
+
+</RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint = "#EC5560"
+        android:src="@drawable/folder"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+
+</RelativeLayout>

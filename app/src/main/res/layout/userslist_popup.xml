@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/dialog_background_color">
+
+
+    <TextView
+        android:id="@+id/titlealert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Album"
+        android:textSize="22dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/dialog_text"
+        />
+
+
+    <TextView
+        android:id="@+id/titlemessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlealert"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="18dp"
+        android:text="You have already shared this Album!"
+        android:textColor="@color/dialog_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:textColor="@color/dialog_text"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/cancel"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/dialog_text"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/titlemessage"
+        android:layout_toStartOf="@+id/ok" />
+
+
+</RelativeLayout>
